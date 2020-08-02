@@ -1,7 +1,7 @@
-const URL = window.location.hostname.includes('localhost')
-  ? 'https://localhost:8080'
+const URL_BACKEND_TOP = window.location.hostname.includes('localhost')
+  ? 'http://localhost:8080'
   : 'https://suriflix.herokuapp.com';
 
 export default {
-  URL,
+  URL_BACKEND_TOP,
 };

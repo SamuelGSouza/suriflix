@@ -14,10 +14,19 @@ const Container = styled.ul`
     margin: auto;
     width: 30px;
     height: 30px;
+    color: #005ba2;
     transform: initial;
     &:before {
       font-size: 30px;
     }
+  }
+
+  .slick-prev::before {
+    color: black;
+  }
+
+  .slick-next::before {
+    color: black
   }
   
   .slick-prev {
@@ -38,7 +47,6 @@ export const SliderItem = styled.li`
   }
 `;
 
-
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
@@ -55,4 +63,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

@@ -1,7 +1,6 @@
 import config from '../config';
 
-const URL_CATEGORIES = `${config.URL}/categorias`;
-console.log(URL_CATEGORIES);
+const URL_CATEGORIES = `${config.URL_BACKEND_TOP}/categorias`;
 
 function getAll() {
   return fetch(`${URL_CATEGORIES}`)
@@ -20,8 +19,6 @@ function getAllWithVideos() {
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();
-        console.log(`${URL_CATEGORIES}?_embed=videos`);
-
         return resposta;
       }
 

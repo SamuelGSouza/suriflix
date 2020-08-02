@@ -4,6 +4,7 @@ function useForm(valoresIniciais) {
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
+    // chave: nome, descricao, bla, bli
     setValues({
       ...values,
       [chave]: valor, // nome: 'valor'
@@ -11,11 +12,14 @@ function useForm(valoresIniciais) {
   }
 
   function handleChange(infosDoEvento) {
-    setValue(infosDoEvento.target.getAttribute('name'), infosDoEvento.target.value);
+    setValue(
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value,
+    );
   }
 
   function clearForm() {
-    return setValues(valoresIniciais);
+    setValues(valoresIniciais);
   }
 
   return {

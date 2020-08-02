@@ -13,6 +13,9 @@ function Footer() {
         <a href="https://www.alura.com.br/">
           Imersão React da Alura
         </a>
+        {' '}
+        <br />
+        <i>by: Samuel de Souza Gomes</i>
       </p>
     </FooterBase>
   );
