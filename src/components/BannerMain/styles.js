@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ContentAreaContainer = styled.section`
   margin-left: 5%;
-  margin-right: 5%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -16,7 +15,7 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
-  width: 50%;
+  width: 45%;
   display: inline-block;
   margin-bottom: 50px;
   @media (max-width: 800px) {
